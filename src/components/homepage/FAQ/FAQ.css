@@ -1,0 +1,156 @@
+
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+
+.box {
+  width: 820px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.questions {
+  display: flex;
+  /* flex-direction: row; */
+  flex-flow: row wrap;
+  place-content: center;
+  width: 60%;
+  margin: 10px;
+  /* padding-left: 10vw; */
+  /* padding-right: 10vw; */
+  color: #fff;
+}
+.sec-faq {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.box .heading {
+  background: #7800cf;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Rubik";
+}
+
+.faqs {
+  /* padding: 0px 20px 20px; */
+  display: flex;
+  /* width:100vw; */
+  height: fit-content;
+  place-content: center; 
+}
+
+::-webkit-details-marker {
+  float: right;
+  margin-top: 10px;
+}
+.top {
+  display: flex;
+  padding-bottom: 0.5vw;
+}
+.top div details:hover {
+  box-shadow: rgb(100, 99, 177,0.8) 3px 3px;
+  scale: 1.02;
+  transition-duration: 0.4s;
+}
+.mid div details:hover {
+  box-shadow: rgb(100, 99, 177,0.8) 3px 3px;
+  scale: 1.02;
+  transition-duration: 0.4s;
+}
+.bottom div details:hover {
+  box-shadow: rgb(100, 99, 177,0.8) 3px 3px;
+  scale: 1.02;
+  transition-duration: 0.4s;
+}
+
+.mid {
+  display: flex;
+  padding-bottom: 0.5vw;
+}
+.bottom {
+  display: flex;
+  padding-bottom: 0.5vw;
+}
+
+details {
+  margin: 0 0.5vw;
+  background: rgba(20, 20, 20, 0.984);
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 10px;
+  font-family: "Rubik";
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 400px;
+}
+
+details summary {
+  outline: none;
+  width: 400px;
+  height: 20px;
+}
+.faq-text {
+  align-items: center;
+  justify-content: center;
+  margin-left: 43%;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  text-align: center;
+}
+.answer {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  color: silver;
+}
+
+@media only screen and (max-width: 723px) {
+  .sec-faq details {
+    width: 300px;
+  }
+
+  .faq-text {
+    font-size: 2.5rem;
+    padding-left: 1rem;
+  }
+
+  .sec-faq {
+    margin-left: -22vw;
+    padding-bottom: 1.5rem;
+  }
+
+  .top {
+    flex-direction: column;
+  }
+
+  .mid {
+    flex-direction: column;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  details summary {
+    font-size: 0.8rem;
+    width: 20rem;
+  }
+
+  #timer {
+    display: none;
+  }
+
+  #phone_timers {
+    display: none;
+  } 
+  details{
+    width: 340px;
+  }
+}
+
+.link-reg{
+  color:rgb(206, 141, 191) ;
+}

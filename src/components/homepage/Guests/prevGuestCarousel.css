@@ -1,0 +1,192 @@
+/* GuestCarousel Component
+
+.guest-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .guest-carousel-wrapper {
+    overflow: hidden;
+  }
+  
+  .guest-carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .guest-carousel-slide {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+  }
+  
+  .guest-carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .guest-carousel-nav:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .guest-carousel-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .guest-carousel-nav.prev {
+    left: 16px;
+  }
+  
+  .guest-carousel-nav.next {
+    right: 16px;
+  }
+  
+  .guest-carousel-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  
+  .guest-carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: background-color 0.3s;
+  }
+  
+  .guest-carousel-dot.active {
+    background-color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .guest-carousel-slide {
+      padding: 0;
+    }
+  
+    .guest-carousel-nav {
+      padding: 6px;
+    }
+  
+    .guest-carousel-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+   */
+
+/* GuestCarousel Component */
+
+.guest-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .guest-carousel-wrapper {
+    overflow: hidden;
+  }
+  
+  .guest-carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .guest-carousel-slide {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .guest-carousel-slide:hover {
+    transform: translateY(-10px); /* Slide up slightly on hover */
+  }
+  
+  /* Image Hover Effect */
+  .guest-carousel-slide .guest-card-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
+  
+  .guest-carousel-slide:hover .guest-card-image {
+    transform: scale(1.1); /* Zoom in */
+    filter: blur(5px); /* Blur the background */
+  }
+  
+  /* Overlay */
+  .guest-carousel-slide .guest-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .guest-carousel-slide:hover .guest-card-overlay {
+    opacity: 1; /* Fade in the overlay */
+  }
+  
+  /* Text Information */
+  .guest-carousel-slide .guest-card-info {
+    text-align: center;
+    color: white;
+    transition: transform 0.2s ease-out;
+  }
+  
+  .guest-carousel-slide .guest-card-info h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .guest-carousel-slide .guest-card-info p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .guest-carousel-slide:hover .guest-card-info {
+    transform: translate(0, -10px); /* Slight lift effect */
+  }
+  
+  /* Responsive Design for GuestCarousel */
+  @media (max-width: 768px) {
+    .guest-carousel-slide {
+      padding: 8px;
+    }
+  
+    .guest-carousel-slide .guest-card-info h2 {
+      font-size: 18px;
+    }
+  
+    .guest-carousel-slide .guest-card-info p {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,77 @@
+.guest-section {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  background-color: #000000;
+  /* background-image: url("https://res.cloudinary.com/da5mmxnn3/image/upload/v1703938857/VP%2724/VP-ASSET-ABOUT_quatvi.webp"); */
+  background-size: cover;
+  background-position: center;
+  background-color: #000000;
+  opacity: 1;
+  /* background-image: radial-gradient(#320148 2px, transparent 2px),
+    radial-gradient(#320148 2px, #000000 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px; */
+}
+
+.guest-cards {
+  display: flex;
+  justify-content: center; /* Center the cards */
+  flex-wrap: wrap;
+  margin: 0 -10px; /* Negative margin to counteract spacing */
+}
+
+.guest-card {
+  /* Two cards in a row with 20px gap */
+  width: calc(33.33% - 20px);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px 20px; /* Adjusted margin */
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.guest-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust the space between image and details */
+}
+
+.guest-details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.bigger-heading {
+  font-size: 1.5em; /* Adjust font size of the name */
+  font-weight: bold;
+  margin-bottom: 10px; /* Add some space below the name */
+}
+
+.post {
+  font-weight: bold;
+}
+
+.info {
+  font-size: 0.9em; /* Adjust font size of the info */
+}
+
+.guest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .guest-card {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px; /* Adjusted margin */
+  }
+}

@@ -1,0 +1,51 @@
+/* Navigation.css */
+.nav-item {
+    padding: 1rem 2rem 1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ebebeb;
+    min-width: 80px;
+    margin: auto;
+  }
+  
+  .nav-item:hover {
+    background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+    background-size: 100% 100%;
+    color: #27262c;
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 #ef816c;
+    font-weight: bold;
+  }
+  
+  .nav-item:active {
+    transform: translateY(4px);
+  }
+  
+  @keyframes spring {
+    15% {
+      transform-origin: center center;
+      transform: scale(1.2, 1.1);
+    }
+    40% {
+      transform-origin: center center;
+      transform: scale(0.95, 0.95);
+    }
+    75% {
+      transform-origin: center center;
+      transform: scale(1.05, 1);
+    }
+    100% {
+      transform-origin: center center;
+      transform: scale(1, 1);
+    }
+  }
+  
+  .shameless-plug {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    padding: 8px 20px;
+    color: #ccc;
+    text-decoration: none;
+  }
+  

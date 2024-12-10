@@ -1,0 +1,76 @@
+/* Main stripe container */
+.timeline-stripe {
+  margin: 0 auto;
+  background-color:black;
+  position: relative;
+  height: 14rem; /* Replacing Tailwind's h-56 */
+  width: 100%;
+  transition: height 0.5s ease-in-out; /* Replacing Tailwind's duration-500 and ease-expo */
+}
+
+.timeline-stripe:hover {
+  height: 16rem; /* Replacing Tailwind's hover:h-64 */
+  background:  linear-gradient(to right, #5b56c2, #d891d7);
+}
+
+/* Background image */
+.stripe-background {
+  position: absolute;
+  top: 0;
+  
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Replacing Tailwind's object-cover */
+  transition: inherit; /* Matches the parent's transition */
+}
+
+/* Content container */
+.stripe-content {
+  position: relative;
+  z-index: 2; /* Ensures content is above the background */
+  height: 100%;
+  max-width: 100%; /* Replacing Tailwind's max-w-screen-xl */
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.stripe-content .line{
+  z-index: -1;
+ 
+  border-radius: 2px;
+  height: 100%;
+  margin: 0px;
+  width: 2px;
+  background-color: aliceblue;
+}
+
+/* Heading */
+.stripe-heading {
+  margin-left: 40px;
+  margin-right: 80px;
+  
+  font-size: 2rem; /* Replacing Tailwind's text-4xl */
+  text-transform: capitalize; /* Replacing Tailwind's capitalize */
+  font-weight: 600; /* Replacing Tailwind's font-semibold */
+}
+.stripe-heading-div{
+  width: 300px;
+}
+
+/* Description container */
+.stripe-description {
+  font-size: smaller;
+  padding-left:150px ;
+  width: 30%; /* Replacing Tailwind's w-[30%] */
+  flex-basis: 50%;
+}
+
+.stripe-description p {
+  font-size: 1.125rem; /* Replacing Tailwind's text-lg */
+  line-height: 1.25rem; /* Replacing Tailwind's leading-1 */
+  margin-bottom: 1rem; /* Replacing Tailwind's mb-4 */
+}

@@ -1,0 +1,203 @@
+.guest-section {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  background-color: #000000;
+  /* background-image: url("https://res.cloudinary.com/da5mmxnn3/image/upload/v1703938857/VP%2724/VP-ASSET-ABOUT_quatvi.webp"); */
+  background-size: cover;
+  background-position: center;
+  background-color: #000000;
+  opacity: 1;
+  background-image: radial-gradient(#320148 2px, transparent 2px),
+    radial-gradient(#320148 2px, #000000 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.guest-cards {
+  display: flex;
+  justify-content: center; /* Center the cards */
+  flex-wrap: wrap;
+  margin: 0 -10px; /* Negative margin to counteract spacing */
+}
+
+.guest-card {
+  /* Two cards in a row with 20px gap */
+  width: calc(33.33% - 20px);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px 20px; /* Adjusted margin */
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.guest-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust the space between image and details */
+}
+
+.guest-details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.bigger-heading {
+  font-size: 1.5em; /* Adjust font size of the name */
+  font-weight: bold;
+  margin-bottom: 10px; /* Add some space below the name */
+}
+
+.post {
+  font-weight: bold;
+}
+
+.info {
+  font-size: 0.9em; /* Adjust font size of the info */
+}
+
+.guest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .guest-card {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px; /* Adjusted margin */
+  }
+}
+
+
+/* button {
+    font: 18px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 0.2s;
+    transform: scale(2);
+    border: 1px solid;
+  }
+  
+  button span {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    color: #fff;
+  }
+  
+  button .liquid {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #FF229F;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    transition: 0.6s;
+  }
+  
+  button .liquid::after,
+  button .liquid::before {
+    position: absolute;
+    content: "🪐";
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -75%);
+  }
+  
+  button .liquid::after {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    box-shadow: 0 0 10px 5px #33053C, inset 0 0 5px #33053C;
+    animation: animate 5s linear infinite;
+    opacity: 0.8;
+  }
+  
+  button .liquid::before {
+    content: "🚀";
+    border-radius: 40%;
+    box-shadow: 0 0 10px rgba(26, 26, 26, 0.5),
+          inset 0 0 5px rgba(26, 26, 26, 0.5);
+    background: rgba(26, 26, 26, 0.5);
+    animation: animate_3881 7s linear infinite;
+  }
+  
+  @keyframes animate_3881 {
+    0% {
+      transform: translate(-25%, -75%) rotate(0);
+    }
+  
+    100% {
+      transform: translate(-25%, -75%) rotate(360deg);
+    }
+  }
+  
+  button:hover .liquid {
+    top: -120px;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 5px #33053C, inset 0 0 5px #33053C;
+    transition-delay: 0.2s;
+  }
+   */
+
+   .space-button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #292b2c; /* Black background color */
+    border: 2px solid #00AFB9; /* Border color */
+    padding: 15px 30px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .space-button:hover {
+    background-color: #00AFB9; /* Hover background color */
+    color: black; /* Hover text color */
+    border-color: #292b2c; /* Hover border color */
+  }
+  
+  .space-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('space-background.jpg') center center/cover;
+    mix-blend-mode: multiply;
+    z-index: -1;
+  }
+  
+  /* Optional: Add some shine animation */
+  .space-button:hover:before {
+    animation: shine 1.5s infinite;
+  }
+  
+  @keyframes shine {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+  }
+  

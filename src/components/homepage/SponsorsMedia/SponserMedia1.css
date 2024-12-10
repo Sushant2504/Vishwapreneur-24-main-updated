@@ -1,0 +1,192 @@
+/* #gradient-canvas {
+    position: fixed;
+    min-height: 100vh;
+    z-index: -1;
+    --gradient-color-1: #00eaff;
+    --gradient-color-2: #3d3d3d;
+    --gradient-color-3: #000000;
+    --gradient-color-4: #1d002b;
+}
+canvas{
+    aspect-ratio: auto 1079 / 600;
+}
+user agent stylesheet
+canvas {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+} */
+.headContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.sponsors {
+    user-select: none;
+    max-width: 300px;
+    margin: 5rem auto;
+    /* border: 1px solid #ffffff22; */
+    /* background-color: #0053f8;
+    background: linear-gradient(0deg, #6e0535 5%, #00eaff 150%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 2.7rem;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    overflow: hidden; */
+    /* transition: 0.5s all; */
+    background: rgba(170, 158, 220, 0.64);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(220, 136, 230, 0.06);
+    transition-property: all;
+    transition-duration: 500ms;
+}
+/* .sponsors:hover{
+    position: fixed;
+    content: "";
+    box-shadow: -1px 3px 100px 40px #ffffff08;
+    top: -10%;
+    left: -100%;
+    transform: rotate(-45deg);
+    height: 60rem;
+    transition: 0.7s all;
+} */
+.sponsors .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    text-align: center;
+}
+/* .sponsors::before {
+    position: fixed;
+    content: "";
+    box-shadow: -1px 3px 100px 40px #ffffff08;
+    top: -10%;
+    left: -100%;
+    transform: rotate(-45deg);
+    height: 60rem;
+    transition: 0.7s all;
+} */
+.sponsors .main .logoimg {
+    height: 245px;
+    width: 266px;
+    background: transparent;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    place-content: center;
+    place-items: center;
+}
+.sponsors .main .logoimg img{
+    object-fit: cover;
+}
+.sponsors .main .tokenImage {
+    border-radius: 2.0rem;
+    object-fit: none;
+    padding: 10px;
+    /* width: 88%; */
+    /* height: 78%; */
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.sponsors hr {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #88888855;
+    margin-top: 0;
+}
+.sponsors .main .description {
+    margin: 0.5rem 0;
+    /* color: #a89ec9; */
+    color: #f1f1f1;
+    font-size: 25px;
+}
+.main h2, .description {
+    text-align: center;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+div {
+    display: block;
+}
+.sponsors {
+    transition: transform 0.7s ease-in-out; /* Add transition for a smooth effect */
+}
+
+.sponsors:hover {
+    transform: scale(1.1); /* Increase the size of the container on hover */
+    /* background: linear-gradient(to bottom, #ffcccc, #ff9999); Change the gradient colors on hover */
+}
+
+body {
+    margin: 0;
+    font-family: 'batmanforeveralternate','Rajdhani','Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background-color: #282c34; */
+    background-color: #000000;
+    /* background: linear-gradient(0deg, #000000 5%, #001029 150%); */
+    /* background: radial-gradient(circle, rgb(255 183 0 / 80%) 0%, rgb(127 0 59 / 60%) 100%); */
+    /* background: radial-gradient(circle, rgba(30, 30, 30, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%); */
+    /* background-image: url(dust-texture-png-15.png); */
+    color: #ffffff;
+    user-select: none;
+}
+
+.level2{
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.level3{
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.level4{
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+}

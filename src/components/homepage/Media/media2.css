@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: linear-gradient(to right,#1DA1F2 ,#ff0000c5,#3b5998);
+  color: #fff;
+  font-family: 'Roboto Mono', sans-serif;
+  display: flex;
+  flex-direction: row ;
+
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+   */
+}
+.containers {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* padding: 15rem; */
+  
+  
+}
+.counter-container{
+  transition: all .4s ease-in-out;
+}
+.counter-container :hover{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* margin: 40px 50px; */
+  box-shadow: 1px 2px 15px rgba(0,0,0,1);
+  
+}
+
+
+
+i {
+  box-shadow: 8px 2px 8px rgba(245, 245, 245, 0.075);
+}
+
+
+
+.text{
+  text-align: center;
+  font-size: 50px;
+  margin-left: 40px;
+}
+.social-icon ul
+{
+  position:absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.social-icon ul li{
+  list-style: none;
+  margin: 0 15px;
+}
+.social-icon ul li .fab
+{
+  font-size:35px;
+  line-height: 60px;
+  transition: .3s;
+  color: rgb(0, 0, 0);
+}
+.social-icon ul li .fab:hover
+{
+  color: rgb(242, 242, 243);
+
+}
+.social-icon ul li a
+{
+  /* position: relative; */
+  display: block;
+ color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 43px;
+background-color: white;
+text-align: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0,0.2);
+transition:.6s;
+}
+.social-icon ul li a:hover{
+  transform: translate(0,-20%);
+}
+.social-icon ul li:nth-child(1) a:hover
+{
+  background-color:rgb(95, 168, 216) ;
+}
+.social-icon ul li:nth-child(2) a:hover
+{
+  background-color:rgb(0, 102, 255) ;
+}
+.social-icon ul li:nth-child(3) a:hover
+{
+  background-color:rgb( 205, 72, 107) ;
+}
+.social-icon ul li:nth-child(4) a:hover
+{
+  background-color:rgb(211, 64, 64) ;
+}
+
+.popup-card {
+  margin-top: 10rem;
+  position: absolute;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  height: 20rem;
+  width: 32rem;
+  /* margin-top: 25rem; */
+  /* max-width: 900px;  */
+  /* padding: 10px; */
+  display: none;
+  /* align-content: center; */
+  /* z-index: 1; */
+}
+
+.popup-card iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.twitter-icon {  
+  position: relative;  
+  margin-left: -25rem;
+  margin-top: 5rem;}
+  .linkedin-icon
+   { margin-top: 25rem; 
+    margin-left: 25rem; }
+  .instagram-icon 
+  { margin-top: 5rem;
+    margin-left: 30rem;
+  }
+  .youtube-icon {  
+    margin-left: -20rem;
+    margin-top: 25rem }
+    .icon {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }

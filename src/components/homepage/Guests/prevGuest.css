@@ -1,0 +1,41 @@
+/* Guest3.css */
+
+/* Title Styles */
+.page-title {
+    text-align: center;
+    font-size: 2rem; /* Adjust based on your design */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem; /* Adjust the margin */
+  }
+  
+  /* Container Styles */
+  .container {
+    margin: auto;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+  }
+  
+  /* Grid Styles */
+  .guest-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  
+  /* For medium screen (sm) and up */
+  @media (min-width: 640px) {
+    .guest-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* For large screen (md) and up */
+  @media (min-width: 768px) {
+    .guest-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

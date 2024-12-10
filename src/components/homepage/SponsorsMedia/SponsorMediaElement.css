@@ -1,0 +1,23 @@
+/* Container styling specific to the SponsorMediaElement */
+.sponsor-container {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .sponsor-motion-container {
+    display: flex;
+    flex-shrink: 0;
+    padding-right: 5rem; /* Equivalent to Tailwind's `pr-20` */
+    align-items: center;
+    gap: 5rem; /* Equivalent to Tailwind's `gap-20` */
+    padding-top: 1.75rem; /* Equivalent to Tailwind's `py-7` */
+    padding-bottom: 1.75rem;
+  }
+  
+  .sponsor-image {
+    max-width: 200px;
+    height: auto;
+  }
+  

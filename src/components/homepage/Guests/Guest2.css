@@ -1,0 +1,188 @@
+/* General Reset */
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@300&family=Montserrat:wght@500&family=Poppins:wght@400;700&family=Roboto+Slab:wght@500&family=Roboto:wght@900&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #000;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-position: 0 0, 40px 40px;
+}
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Card Container Styles */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.5em;
+  row-gap: 5.5em;
+  margin-top: 25px;
+}
+.card {
+  width: 350px; /* Replace with your current card width */
+  height: 380px; /* Replace with your current card height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #1a1a2e; /* Your background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(31, 29, 29, 0.2);
+  margin: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(94, 87, 87, 0.7);
+}
+
+.card-body {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card-info {
+  color: #fff;
+}
+
+.card-name {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
+  transition: margin-top 0.3s ease; /* Added smooth transition for margin */
+}
+
+.card-content {
+  font-size: 1rem; /* Keep the same text size */
+  font-weight: 400; /* Ensure it matches your description style */
+  font-family: "Poppins", sans-serif; /* Use the same font */
+  color: #ddd; /* Keep the color consistent with the description */
+  line-height: 1.5; /* Improve readability */
+  text-align: center; /* Center-align text */
+  word-wrap: break-word; /* Wrap long words */
+  word-break: break-word; /* Ensure proper word breaks */
+  white-space: normal; /* Allow wrapping */
+  display: none; /* Initially hidden */
+  position: relative; /* Ensure proper positioning */
+  transition: all 0.4s ease; /* Smooth hover effect */
+  margin-top: -10px; /* Adjusted position */
+}
+
+.card:hover .card-content {
+  display: block; /* Show content on hover */
+  margin-top: 0px; /* Remove extra space between description and content */
+  color: #ddd; /* Keep the color consistent with the description */
+  transition: all 0.4s ease; /* Add smooth transition */
+  transform: translateY(-70px);
+  transition: transform 0.9s ease;
+}
+
+.card:hover .card-description {
+  margin-top: -8px; /* Reduce space between description and content */
+  color: #ddd; /* Ensure description color is consistent */
+}
+
+/* Image Hover Effect */
+.card-body:hover .card-figure {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-radius 0.4s ease, width 0.4s ease, background-color 0.1s ease;
+  transform: scale(1.1) translateY(-65px); /* Scale up and move the image up */
+  box-shadow: 0px -5px 15px #ffb3eb; /* Shadow from the top */
+  border-radius: 8%;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.card-body:hover .card-name {
+  transform: translateY(-80px);
+  transition: transform 0.3s ease;
+}
+
+.card-body:hover .card-description {
+  transform: translateY(-70px);
+  transition: transform 0.3s ease;
+}
+
+.card-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  z-index: 1;
+}
+
+.card-figure {
+  position: relative;
+  width: 160px;
+  height: 170px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  z-index: 2;
+  border-radius: 8%;
+  margin-bottom: 30px;
+  object-fit: fill; /* Ensure the image fills the circle */
+  background-color: #cd4993;
+  padding: 2px;
+}
+
+
+.space-button {
+  font-family: Nunito, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background-color: #292b2c;
+  border: 2px solid #00afb9;
+  padding: 15px 30px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color .3s, color .3s, border-color .3s;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1210px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card-body {
+    width: 100%;
+  }
+  .card-container {
+    margin: 0 20px;
+  }
+}

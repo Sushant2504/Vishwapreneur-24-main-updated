@@ -1,0 +1,345 @@
+ @font-face {
+    font-family: 'BatmanForeverAlternate';
+    src: url('../batmfa__.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+/*
+.main-heading{
+  font-family: 'BatmanForever';
+   font-size: 3.4rem;
+}
+.sub-heading{
+  font-family: 'BatmanForever';
+   font-size: 1.4rem;
+   
+}
+.teamPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+  gap: 10rem;
+  flex-wrap: wrap;
+}
+
+.Teamcard {
+  position: relative;
+  width: 270px;
+  height: 140px;
+  
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.Teamcard:hover {
+  height: 190px;
+}
+
+.imgBx {
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.Teamcard:hover .imgBx {
+  width: 120px;
+  height: 120px;
+  
+}
+
+.Teamcard:hover .imgBx img{
+
+  filter: grayscale(100%);
+opacity:0.5;
+
+}
+.imgBx img {
+  transition:0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.scifi {
+  background-image: url("./scifi.png");
+}
+.Teamcard .content {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.Teamcard .content .details {
+ 
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(120px);
+}
+
+.Teamcard:hover .content .details {
+  transform: translateY(0px);
+}
+
+.Teamcard .content .details h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+}
+.Teamcard .content .details h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.Teamcard .content .details .data {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.Teamcard .content .details .data h3 {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+.Teamcard .content .details .data h3 span {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.Teamcard .content .details .socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding:1rem;
+}
+.Teamcard .content .details .socials button {
+
+  padding: 5px 30px;
+  border-radius: 5px;
+  border: none;
+  width:0.3rem;
+  height:1rem;
+  outline: none;
+  font-size: 5em;
+  font-weight: 500;
+  background: #ff5f95;
+  color: #fff;
+  cursor: pointer;
+} */
+
+@font-face {
+  font-family: 'BatmanForeverAlternate';
+  src: url('../batmfa__.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  font-family: "batmfa__""Rajdhani", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.teamPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.Teamcard {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  height: 250px;
+  /* padding: 10rem; */
+  /* margin-top: 15rem; */
+  /* /* background: rgb(220, 174, 174); */
+  /* background: rgba(220, 136, 230, 0.11);  */
+  /* border-radius: 20px; */
+  /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(220, 136, 230, 0.06); */
+background: rgba(170, 158, 220, 0.64);
+border-radius: 20px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(220, 136, 230, 0.06);
+
+  transition: 0.5s;
+  margin-bottom: 2rem;
+}
+
+.Teamcard:hover {
+  height: 190px;
+}
+
+.imgBx {
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 220px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.5s;
+}
+
+.Teamcard:hover .imgBx {
+  width: 120px;
+  height: 120px;
+}
+
+.Teamcard:hover .imgBx img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.imgBx img {
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Teamcard .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.Teamcard .content .details {
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(120px);
+  justify-content: center;
+  padding-bottom: 15px; 
+}
+
+.Teamcard:hover .content .details {
+  transform: translateY(0px);
+}
+
+.Teamcard .content .details h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2em;
+}
+
+.Teamcard .content .details h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.Teamcard .content .details .data {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.Teamcard .content .details .data h3 {
+  font-size: 1em;
+  color: #ffffff;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.Teamcard .content .details .data h3 span {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.Teamcard .content .details .socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.Teamcard .content .details .socials button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  width: 0.3rem;
+  height: 1rem;
+  outline: none;
+  font-size: 1em;
+  font-weight: 500;
+  background: #ff5f95;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* @media (min-width: 768px) {
+  .Teamcard {
+      max-width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Teamcard {
+      max-width: 350px;
+  }
+} */
+
+@media (max-width: 767px) {
+  .Teamcard {
+    width: 100%;
+  }
+  .My_card_wrapper{
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  place-items: center;
+  }
+}
