@@ -34,8 +34,8 @@ body {
   margin-top: 25px;
 }
 .card {
-  width: 350px; /* Replace with your current card width */
-  height: 380px; /* Replace with your current card height */
+  width: 390px; /* Replace with your current card width */
+  height: 470px; /* Replace with your current card height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +43,7 @@ body {
   background-color: #1a1a2e; /* Your background color */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(31, 29, 29, 0.2);
-  margin: 15px;
+  margin: 35px;
 }
 
 .card:hover {

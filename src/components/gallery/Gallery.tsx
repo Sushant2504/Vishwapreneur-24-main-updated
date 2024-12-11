@@ -95,6 +95,25 @@ const column1Images = [
   {
     url: "https://res.cloudinary.com/edcviitcom/image/upload/v1707046412/vp24/Screenshot_206_-min_dekgvj.webp",
   },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830427/vp24/Ver1/co45vul8bhc1wdfhj3ya.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830427/vp24/Ver1/mbsloznl9flu3icglc03.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830425/vp24/Ver1/io7hzhiddmivnrxyrvhj.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830423/vp24/Ver1/oynmvkhkkcc08fyprfkm.jpg",
+
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830423/vp24/Ver1/gj3rmqd1u11wxmuqmmmx.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830421/vp24/Ver1/jxsmgmxkzlvc73facodq.jpg",
+  }
 ];
 
 const column2Images = [
@@ -113,6 +132,18 @@ const column2Images = [
   {
     url: "https://res.cloudinary.com/edcviitcom/image/upload/v1707046412/vp24/Screenshot_204_-min_kde4yt.webp",
   },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830427/vp24/Ver1/undagjgf2c7etlg0jfuh.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830426/vp24/Ver1/hcs1s8lukz9ovfuy9rrx.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830423/vp24/Ver1/corkfjd4wwuhvplye8xt.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830421/vp24/Ver1/jxsmgmxkzlvc73facodq.jpg", 
+  }
 ];
 const column3Images = [
   {
@@ -127,6 +158,21 @@ const column3Images = [
   {
     url: "https://res.cloudinary.com/edcviitcom/image/upload/v1707046412/vp24/Screenshot_205_-min_bouyxz.webp",
   },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830425/vp24/Ver1/zarzatobvan00h6zqiyw.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830425/vp24/Ver1/zarzatobvan00h6zqiyw.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830422/vp24/Ver1/zxp6vevtqr3xgrsj1d9m.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830421/vp24/Ver1/jxsmgmxkzlvc73facodq.jpg",
+  },
+  {
+    url: "https://res.cloudinary.com/edcviitcom/image/upload/v1733830420/vp24/Ver1/o7fe7klkamqlt5rmtecd.jpg",
+  }
   
 ]
 export function Gallery() {

@@ -142,7 +142,7 @@ const Gallery = () => {
     <div id="Gallery">
       <div className="bg-black pb-20">
       <div className="container mx-auto text-center">
-        <h2 className="main-heading pt-28 bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
+        <h2 className="main-heading pt-28 bg-gradient-to-r from-[#b74b9b] to-[#ffb3eb] text-transparent bg-clip-text text-3xl font-bold text-center py-16">
           Gallery
         </h2>
 
@@ -190,3 +190,5 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+

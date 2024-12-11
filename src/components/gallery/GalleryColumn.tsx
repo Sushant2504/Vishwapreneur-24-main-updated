@@ -44,6 +44,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
+
 interface GalleryColumnProps {
   images: Array<{
     url: string;
