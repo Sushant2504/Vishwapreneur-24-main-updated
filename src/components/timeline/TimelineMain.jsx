@@ -7,7 +7,7 @@ const TimelineMain = () => {
     const events = {
         1: [
             {
-                heading: "Opening Cremony",
+                heading: "Opening Ceremony",
                 description:[ 
                      { name: "Mr. Vivek Bhatia", role: "MD, thyssenkrupp Industries" },
                     { name: "Mr. Bharat Agarwal", role: "President, Vishwakarma University & MD, Aakar Foundry" },
@@ -23,7 +23,7 @@ const TimelineMain = () => {
                 vid: "day1-1.jpg",
             },
             {
-                heading: "Matering The Boardroom",
+                heading: "Mastering The Boardroom",
                 description:[
                     { name: "Mr. Vivek Bhatia", role: "MD, thyssenkrupp Industries" },
                     { name: "Mr. Nikhil Malhotra", role: "CIO, TechMahindra" },
@@ -34,6 +34,15 @@ const TimelineMain = () => {
                 caseStudy: false,
                 
                 vid: "day1-2.jpg",
+            },
+            {
+                heading: "Game of Graphs - Workshop",
+                description:[{ name: "Mr. Sushant Bindal", role: "Founder, Money Monitors" }],
+                    
+                live: true,
+                caseStudy: false,
+                
+                vid: "day1-4.jpg",
             },
             {
                 heading: "Filler",
@@ -109,11 +118,11 @@ const TimelineMain = () => {
                 vid: "day2-2.jpg"  
             },  
             {  
-                heading: "Game of Graphs - Workshop",  
+                heading: "Peeking into the Future",  
                 description: [  
                     {  
-                        name: "Mr. Sushant Bindal",  
-                        role: "Founder, Money Monitors"  
+                        name: "Mr. Saurabh Jain",  
+                        role: "Ex Vice-President of Paytm"  
                     }  
                 ],  
                 live: true,  
@@ -122,15 +131,15 @@ const TimelineMain = () => {
             },  
             {  
                 heading: "From Side Gig to Mainstream Maven",  
-                description: [  
-                    {  
-                        name: "RJ Soham",  
-                        role: "Social Media Influencer"  
-                    },  
+                description: [ 
                     {  
                         name: "Shreenam Legend",  
                         role: "Gaming Creator"  
-                    },  
+                    }, 
+                    {  
+                        name: "RJ Soham",  
+                        role: "Social Media Influencer"  
+                    },   
                     {  
                         name: "Mr. Atharva Sudame",  
                         role: "Content Creator"  
@@ -174,7 +183,7 @@ const TimelineMain = () => {
     return (
         <div className="w-full bg-black min-h-screen pt-20">
             <div className="max-w-full mx-auto shadow-2xl rounded-xl">
-                <h1 className="text-6xl font-extrabold text-[#9c64a3] text-white mb-6 italic ">
+                <h1 className="time-heading pt-28 bg-gradient-to-r from-[#b74b9b] to-[#ffb3eb] text-transparent bg-clip-text text-5xl font-bold text-center py-16">
                     Timeline
                 </h1>
 
