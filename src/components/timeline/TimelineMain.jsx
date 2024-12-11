@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Timeline from './Timeline';
+import 'TimelineMain.css';
 
 const TimelineMain = () => {
     const [selectedDay, setSelectedDay] = useState(1);
